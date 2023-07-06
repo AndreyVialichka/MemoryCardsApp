@@ -1,0 +1,8 @@
+.slider {
+	display: flex;
+	justify-content: space-around;
+}
+
+.numbers {
+	padding: 50 auto;
+}
