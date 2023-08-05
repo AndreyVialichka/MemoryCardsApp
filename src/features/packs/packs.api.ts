@@ -1,20 +1,19 @@
 import { instance } from "common/api/common.api";
 
 export const packsApi = {
-	getPacks: (arg:FetchPackType) => {
-    debugger
-		return instance.get<FetchPacksResponseType>("cards/pack", {
-			params: {
-				//❗Ваш user_id
-				user_id: arg.user_id,
-				pageCount: 20,
+  getPacks: (arg: FetchPackType) => {
+    debugger;
+    return instance.get<FetchPacksResponseType>("cards/pack", {
+      params: {
+        user_id: arg.user_id,
+        pageCount: 20,
         min: arg.min,
         max: arg.max,
         packName: arg.packName,
-        page:arg.page
-			},
-		});
-	},
+        page: arg.page,
+      },
+    });
+  },
   createPack: (cardsPack: ArgCreatePackType) => {
     return instance.post<CreatePackResponseType>("cards/pack", { cardsPack });
   },
@@ -81,11 +80,11 @@ export type ArgCreatePackType = {
 };
 
 export type FetchPackType = {
-  packName: string
-  min: number
-  max: number
-  sortPacks?: string
-  page?: number
-  pageCount?: number
-  user_id?: string | undefined
-}
+  packName: string;
+  min: number;
+  max: number;
+  sortPacks?: string;
+  page?: number;
+  pageCount?: number;
+  user_id?: string | undefined;
+};
