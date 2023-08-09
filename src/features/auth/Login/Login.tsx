@@ -7,6 +7,7 @@ import { useState } from "react";
 import {
   Box,
   Button,
+  FormLabel,
   IconButton,
   InputAdornment,
   TextField,
@@ -33,7 +34,7 @@ export const Login = () => {
     };
     login(payload)
       .unwrap()
-      .then((res) => {
+      .then((res) => { 
         toast.success("Вы успешно залогинились");
         navigate("/profile");
       })
@@ -55,10 +56,24 @@ export const Login = () => {
             gap: "20px",
             backgroundColor: "white",
             m: "auto",
-            marginTop: "140px",
+            marginTop: "40px",
             padding: "20px",
           }}
-        >
+        > 
+        <FormLabel> 
+                        <p>
+                            To log in get registered <a href={'https://social-network.samuraijs.com/'}
+                                                        target={'_blank'}>here</a>
+                        </p> 
+                        <p>
+                            or use common test account credentials:
+                        </p>
+                        <p> Email: free@samuraijs.com
+                        </p>
+                        <p>
+                            Password: samurai1
+                        </p>
+                    </FormLabel>
           <Typography id="form-login-title" variant="h6" component="h2">
             Login
           </Typography>
