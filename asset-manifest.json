@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/MemoryCardsApp/static/css/main.ab897374.css",
-    "main.js": "/MemoryCardsApp/static/js/main.64e02313.js",
+    "main.js": "/MemoryCardsApp/static/js/main.7ea9c96c.js",
     "static/js/787.8517b185.chunk.js": "/MemoryCardsApp/static/js/787.8517b185.chunk.js",
     "static/media/avatar.png": "/MemoryCardsApp/static/media/avatar.bfcabd7be0c4236c8e4f.png",
     "index.html": "/MemoryCardsApp/index.html",
     "main.ab897374.css.map": "/MemoryCardsApp/static/css/main.ab897374.css.map",
-    "main.64e02313.js.map": "/MemoryCardsApp/static/js/main.64e02313.js.map",
+    "main.7ea9c96c.js.map": "/MemoryCardsApp/static/js/main.7ea9c96c.js.map",
     "787.8517b185.chunk.js.map": "/MemoryCardsApp/static/js/787.8517b185.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab897374.css",
-    "static/js/main.64e02313.js"
+    "static/js/main.7ea9c96c.js"
   ]
 }
