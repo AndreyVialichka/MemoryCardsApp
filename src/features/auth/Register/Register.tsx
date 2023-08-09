@@ -12,7 +12,7 @@ import {
   Typography,
 } from "@mui/material";
 import { toast } from "react-toastify";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 
 export const Register = () => {
@@ -21,10 +21,13 @@ export const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [confirmedPassportValue, setConfirmedPassportValue] = useState("");
 
+  const navigate = useNavigate();
+
   const { register, unHandleAction } = useActions({
     ...commonActions,
     ...authThunks,
   });
+
 
   useEffect(() => {
     const res = unHandleAction();
@@ -41,7 +44,10 @@ export const Register = () => {
     register(payload)
       .unwrap()
       .then((res) => {
+
         toast.success(`Вы успешно зарегестрировались`);
+        navigate('/login')
+        
       })
       .catch((err) => {
         toast.error(err.data.error);
