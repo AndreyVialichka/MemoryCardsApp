@@ -64,7 +64,7 @@ export const Login = () => {
                         <p>
                              use common test account credentials:
                         </p>
-                        <p> Email: free@samuraijs.com
+                        <p> Email: free@gmail.com
                         </p>
                         <p>
                             Password: samurai1
