@@ -14,7 +14,7 @@ import { userIDSelector } from "features/packs/packs.selector";
 const style = {
   position: "absolute" as "absolute",
   top: "50%",
-  left: "40%",
+  left: "50%",
   transform: "translate(-50%, -50%)",
   width: 400,
   bgcolor: "background.paper",
