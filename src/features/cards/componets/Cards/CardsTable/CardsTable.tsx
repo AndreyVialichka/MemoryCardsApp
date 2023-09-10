@@ -24,6 +24,7 @@ type CardsTablePropsType = {
 };
 
 const StartGrade = (grade: any) => {
+  debugger;
   let startArr = [];
   for (let i = 0; i <= 5; i++) {
     if (i <= grade.grade) {
